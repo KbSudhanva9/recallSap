@@ -1,0 +1,22 @@
+/* Enter your custom styles here */
+.mySamplePadding{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+}
+
+.container{
+    /* display: flex;
+    justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+.tabs{
+    background-color: #fff;
+}
+
+.headdingNames{
+    font-weight: bold;
+}

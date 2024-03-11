@@ -1,0 +1,55 @@
+<mvc:View controllerName="recall1.controller.Screen3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="screen3">
+    <!-- title="{i18n>title}" -->
+        <content >
+            
+            <Label id="hello" text="helllllllllllllllllllll" />
+
+            <!-- <List id="li" backgroundDesign="Solid" headerText="static table" items="{/Categories}">
+                <items>
+                    <StandardListItem id="sl1" title="{CategoryID}" info="{CategoryName}"></StandardListItem>
+                </items>
+            </List> -->
+
+            <Table id="table" headerText="Categories Table">
+                <columns>
+                    <Column ><Label text="id" /></Column>
+                    <Column ><Label text="Name"/></Column>
+                    <!-- <Column ><Label text="Document1" /></Column> -->
+                    <Column ><Label text="Document" /></Column>
+                    
+                    
+                </columns>
+                <items>
+                    <ColumnListItem >
+                        <cells>
+                            <Text text="{id}" />
+                            <Text text="{name}" />
+                            <Button text="your row data" press="onButtonPress" ></Button>
+                            <!-- <Link text="{url}" visible="false" press="onLinkPress" /> -->
+                            <!-- <Button text="{= ${name} + ' ' + ${url} }" press="onLinkPress" ></Button> -->
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+            <Panel id="up"  visible="false" justifyContent="Center" >
+                <FlexBox justifyContent="End">
+                    <Button press="popupclose()"  icon="sap-icon://decline" type="Reject" class="sapUiSmallMarginEnd" />
+                </FlexBox>
+                <FlexBox id="fb">
+                        <PDFViewer id="pdfs" height="500px">
+                            <layoutData>
+                                <FlexItemData growFactor="1" />
+                            </layoutData>
+                        </PDFViewer>
+                </FlexBox>
+            </Panel>
+
+            
+
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,40 @@
+<mvc:View controllerName="recall1.controller.Screen2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content >
+            
+            <!-- <Label id="hello" text="helllllllllllllllllllll" /> -->
+
+            <Button id="popup" text="open pop-up 1" press="popup('b1')"></Button>
+            <Button id="popup1" text="open pop-up 2" press="popup('b2')"></Button>
+            
+
+            <!-- <br /> -->
+
+            <Panel id="up" width="50%"  visible="false" justifyContent="Center">
+                <FlexBox justifyContent="End">
+                    <Button press="popup('close')"  icon="sap-icon://decline" type="Reject" class="sapUiSmallMarginEnd" />
+                </FlexBox>
+                <!-- <FlexBox height="100px" alignItems="Start" justifyContent="Center">
+                    <Button text="1" type="Emphasized" class="sapUiSmallMarginEnd" />
+                    <Button text="2" type="Reject" class="sapUiSmallMarginEnd" />
+                    <Button text="3" type="Accept" />
+                </FlexBox>
+                <FlexBox alignItems="Start" justifyContent="Center">
+                    <Label  text="asdfwer zvcasdf "></Label>
+                    <Input id="kkk" type="Text"></Input>
+                </FlexBox> -->
+                <FlexBox >
+                    <PDFViewer id="pdfs" height="500px">
+                        <layoutData>
+                            <FlexItemData growFactor="1" />
+                        </layoutData>
+                    </PDFViewer>
+                </FlexBox>
+            </Panel>
+
+
+        </content>
+    </Page>
+</mvc:View>

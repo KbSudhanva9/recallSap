@@ -1,0 +1,26 @@
+<mvc:View controllerName="recall1.controller.Screen4"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" class="sapUiContentPadding">
+        <content >
+            <!-- <Label text="hello kbs"></Label> -->
+            <!-- <br/> -->
+            <Label text="Enter Name"></Label>
+            <Input value="" id="inp_nameID"/>
+            <Label text="Enter Age"></Label>
+            <Input value="" id="inp_ageID"/>
+        </content>
+        <footer>
+            <Bar design="Footer">
+                <contentRight>
+                    <Button  text="Open Fragmemnt" press="onOpenDialog"></Button>
+                    <!-- <Button
+                        id="helloDialogButton"
+                        text="open hello dialog box"
+                        press=".onOpenDialog"
+                        class="sapUiSmallMarginEnd"/> -->
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

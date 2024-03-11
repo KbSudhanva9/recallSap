@@ -1,0 +1,52 @@
+<mvc:View controllerName="recall1.controller.Screen5"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" class="sapUiContentPadding">
+        <content >
+            <Label text="hello kbs this is screen5" ></Label>
+            <!-- <br/> -->
+            <Label text="Enter Name"></Label>
+            <Input value="" id="inp_nameID"/>
+            <Label text="Enter Age"></Label>
+            <Input value="" id="inp_ageID"/>
+
+
+            <!-- < -->
+            <Table items="{/Categories}" headerText="Categories Table">
+                <columns>
+                    <Column ><Label text="Category id" /></Column>
+                    <Column ><Label text="Category name"/></Column>
+                    <!-- <Column ><Label text="Picture" /></Column> -->
+                    
+                </columns>
+                <items>
+                    <ColumnListItem id="categoryData">
+                        <cells ><Text text="{CategoryID}"></Text></cells>
+                        <cells ><Text text="{CategoryName}"></Text></cells>
+                        <!-- <cells ><ImageContent src="{Picture}" description="{Description}" ></ImageContent></cells> -->
+                        <!-- <cells ><ImageContent src="test-resources/sap/m/demokit/sample/ImageContent/images/SAPLogoLargeTile_28px_height.png" description="{Description}" ></ImageContent></cells> -->
+                        
+                        <!-- <cells ><Image activeSrc="{Picture}"></Image></cells> -->
+                    </ColumnListItem>
+                </items>
+            </Table>
+
+
+        </content>
+        <footer>
+            <Bar design="Footer">
+                <contentRight>
+                    <Button text="get json data" press="onGetData"></Button>
+                    <Button  text="Open Fragmemnt" press="onOpenDialog"></Button>
+                    <Button  text="Open Fragmemnt" press="onOpenDialogBBB"></Button>
+                    
+                    <!-- <Button
+                        id="helloDialogButton"
+                        text="open hello dialog box"
+                        press=".onOpenDialog"
+                        class="sapUiSmallMarginEnd"/> -->
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

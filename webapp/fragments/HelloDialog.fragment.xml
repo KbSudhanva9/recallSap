@@ -1,0 +1,44 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog
+      id="helloDialog"
+      title="your given data" contentWidth="60%" contentHeight="70%">
+      <content>
+        
+
+            <!-- <Label text="Enter Name"></Label>
+            <Input value="" />
+            <Label text="Enter Age"></Label>
+            <Input value="" /> -->
+
+            <!-- <VBox id="myVBox" class="sapUiContentPadding">
+                <Label id="nameData" text=""/>
+                <Label id="ageData" text=""/>
+            </VBox> -->
+
+            <VBox id="myVBox" class="mySamplePadding">
+                <Label text="Enter Name" />
+                <Input id="nameData" value=""/>
+                <Label text="Enter Age"/>
+                <Input id="ageData" value=""/>
+                <!-- <Label text="Enter Age"/>
+                <Label text="Enter Age"/>
+                <Label text="Enter Age"/>
+                <Label text="Enter Age"/>
+                <Label text="Enter Age"/>
+                <Label text="Enter Age"/>
+                <Label text="Enter Age"/>
+                <Label text="Enter Age"/>
+                <Label text="Enter Age"/> -->
+                
+            </VBox>
+
+
+      </content>
+      <endButton>
+        <Button text="close" press="onCloseDialog"></Button>
+      </endButton>
+
+      </Dialog>
+</core:FragmentDefinition>
